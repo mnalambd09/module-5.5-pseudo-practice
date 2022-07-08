@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            background-color: black;
+            color: white;
+        }
+        li:nth-child(2n){
+            color:limegreen;
+        }
+        li:nth-child(2n+1){
+            background-color: green;
+        }
+        .special::after{
+            content: 'Hello';
+            background-color: red;
+            color: white;
+        }
+        .special::before{
+            content: 'Hi ';
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+        h3::before{
+            content: 'hello';
+        }
+        h3::after{
+            content: 'Whats up';
+        }
+        .practice:first-child{
+            font-size: 30px;
+            color: tomato;
+        }
+        .practice:last-child{
+            color: #ffffff;
+        }
+        .n-child:nth-child(2n){
+            background-color: red;
+            color: white;
+            font-size: 25px;
+        }
+        .n-child:nth-child(2n+1){
+            background-color: rgb(78, 60, 60);
+            color: white;
+            font-size: 25px;
+        }
+        .n-child::after{
+            content: ' World';
+            color: yellow;
+        }
+        .n-child::before{
+            content: 'Hi ';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Aliya</li>
+        <li>Daliya</li>
+        <li>Kaliya</li>
+        <li>Chaliya</li>
+        <li>Maliya</li>
+        <li>Khaliya</li>
+        <li>Faliya</li>
+        <li>Haliya</li>
+        <li>Jaliya</li>
+        <li>Baliya</li>
+
+        <h3 class="special">Hello world !!!</h3>
+        <h3>Hello world !!!</h3>
+        <h3>Hello world !!!</h3>
+        <h3>Hello world !!!</h3>
+        <h3>Hello world !!!</h3>
+        <h3>Hello world !!!</h3>
+
+        <ul>
+            <li class="practice">Hello</li>
+            <li class="n-child">Hello</li>
+            <li class="n-child">Hello</li>
+            <li class="n-child">Hello</li>
+            <li class="n-child">Hello</li>
+            <li class="n-child">Hello</li>
+            <li class="practice">Hello</li>
+        </ul>
+    </ul>
+</body>
+</html>
